@@ -1,3 +1,5 @@
+eval "$(coverish-eval bash)"
+
 # Prevent actual execution of script
 export LIB=1
 
