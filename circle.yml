@@ -10,6 +10,7 @@ dependencies:
     - curl https://source.pbrisbin.com/coverish/coverish-exec-head-linux-x86_64 > coverish-exec
     - chmod +x ./coverish*
     - sudo mv -v ./coverish* /usr/local/bin/
+    - coverish --version
 
 test:
   override:
