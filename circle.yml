@@ -5,11 +5,11 @@ machine:
 dependencies:
   override:
     - pip install cram
-    - curl -O https://source.pbrisbin.com/coverish/coverish-head-Linux-x86_64
-    - curl -O https://source.pbrisbin.com/coverish/coverish-eval-head-Linux-x86_64
-    - curl -O https://source.pbrisbin.com/coverish/coverish-exec-head-Linux-x86_64
+    - curl https://source.pbrisbin.com/coverish/coverish-head-Linux-x86_64 > coverish
+    - curl https://source.pbrisbin.com/coverish/coverish-eval-head-Linux-x86_64 > coverish-eval
+    - curl https://source.pbrisbin.com/coverish/coverish-exec-head-Linux-x86_64 > coverish-exec
     - chmod +x ./coverish*
-    - sudo mv ./coverish* /usr/local/bin/
+    - sudo mv -v ./coverish* /usr/local/bin/
 
 test:
   override:
